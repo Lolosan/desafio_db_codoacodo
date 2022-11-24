@@ -102,12 +102,12 @@
 
 					<div class="tab-pane fade" id="v-pills-2_9" role="tabpanel" aria-labelledby="v-pills-2_9_tab" tabindex="0">
 						<p>Obtener un listado completo de empleados, incluyendo por cada empleado los datos del empleado y de su departamento</p>
-					<pre class="text-wrap"><code class="language-sql text-wrap bg-dark text-light">SELECT empleados.nombre, empleados.apellido, empleados.dni, departamentos.nombre AS departamento, departamentos.presupuesto FROM `empleados` INNER JOIN `departamentos` ON empleados.departamento_id = departamentos.id; </code></pre>
+					<pre class="text-wrap"><code class="language-sql text-wrap bg-dark text-light">SELECT * FROM `empleados` INNER JOIN `departamentos` ON empleados.departamento_id = departamentos.id; </code></pre>
 					</div>
 
 					<div class="tab-pane fade" id="v-pills-2_10" role="tabpanel" aria-labelledby="v-pills-2_10_tab" tabindex="0">
 						<p>Obtener un listado completo de empleados, incluyendo el nombre y apellido del empleado junto al nombre y presupuesto de su departamento</p>
-						<pre class="text-wrap"><code class="language-sql text-wrap bg-dark text-light">SELECT empleados.nombre, empleados.apellido, departamentos.nombre, departamentos.presupuesto FROM `empleados` INNER JOIN `departamentos` ON empleados.departamento_id = departamentos.id</code></pre>
+						<pre class="text-wrap"><code class="language-sql text-wrap bg-dark text-light">SELECT empleados.nombre, empleados.apellido, departamentos.nombre AS departamento, departamentos.presupuesto FROM `empleados` INNER JOIN `departamentos` ON empleados.departamento_id = departamentos.id</code></pre>
 					</div>
 
 					<div class="tab-pane fade" id="v-pills-2_11" role="tabpanel" aria-labelledby="v-pills-2_11_tab" tabindex="0">
